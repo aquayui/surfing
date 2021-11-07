@@ -1,8 +1,3 @@
-#coding=utf-8
-#@Time:2020/10/20 9:45
-#@Author:csdn@hijacklei
-#@File:爬取51job.py
-#@Software:PyCharm
 import re
 import requests
 import time

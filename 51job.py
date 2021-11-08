@@ -46,6 +46,6 @@ def main(num):
         response=get_data(url)
         parse_data(response)
 if __name__ == '__main__':
-    for i in range(1,2):
+    for i in range(1,11):
         main(i)
         time.sleep(2)

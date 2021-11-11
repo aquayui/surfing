@@ -6,7 +6,7 @@ import json
 import pprint
 import pymysql
 
-for page in range(1,201):
+for page in range(1,2001):
     time.sleep(1)
     print(f"----------------------------------正在爬取第{page}页----------------------------------------")
     url = f'https://search.51job.com/list/010000,000000,0000,00,9,99,+,2,{page}.html?lang=c&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&ord_field=0&dibiaoid=0&line=&welfare='
@@ -25,24 +25,42 @@ for page in range(1,201):
     for _ in json_data:
         job_title = _['job_title']
         job_name = _['job_name']#具体工作岗位
-        company_name = _['company_name']
-        companytype = _['companytype_text']
-        companyind = _['companyind_text'] #职务
+        company_name = _['company_name']#公司名称
+        company_type = _['companytype_text']#公司类型
+        try:
+            job_type = _['companyind_text'] #职业类别
+        except:
+            job_type = None
         if '招' in _['attribute_text'][1]: #前程无忧的招聘要求存储并不统一，特此处理
-            experience = None
-            education = None
-            number = _['attribute_text'][1]
+            experience = None      #工作经验
+            education = None        #学历
+            number = _['attribute_text'][1]#招聘人数
         elif '招' in _['attribute_text'][2]:
             experience = _['attribute_text'][1]
-            education = None
+            experience = None
             number = _['attribute_text'][2]
         else:
             experience = _['attribute_text'][1]
             education = _['attribute_text'][2]
             number = _['attribute_text'][3]
-        salary = _['providesalary_text']
-        location = _['workarea_text']
-        description = _['job_href']
-        date = _['issuedate']
-        print(job_title,job_name,company_name,companytype,companyind,experience,education,number,salary,location,description,date,sep = ' | ')
-
+        salary = _['providesalary_text']#薪水
+        location = _['workarea_text']#工作地点
+        description = _['job_href']#岗位链接
+        date = _['issuedate']#发布日期
+        # print(job_title,job_name,company_name,companytype,companyind,experience,education,number,salary,location,description,date,sep = ' | ')
+        conn = pymysql.connect(host="1.116.201.187", user="surfing", password="123456", database="surfing",
+                               charset="utf8")
+        # 得到一个可以执行SQL语句的光标对象
+        cursor = conn.cursor()
+        # 定义要执行的SQL语句
+        sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');" % (
+            '前程无忧',location,salary,experience,education,company_type,job_type,description,job_name,company_name,number,date)
+        # 执行SQL语句
+        try:
+            cursor.execute(sql)
+            conn.commit()
+        except:
+            print()
+cursor.close()
+# 关闭数据库连接
+conn.close()

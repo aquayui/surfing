@@ -7,12 +7,18 @@
 <title>Insert title here</title>
 
 </head>
-<frameset   rows="11%,*"  frameborder="no" framespacing="0">	
-		<frame  src="title.jsp"  noresize="noresize" scrolling="no">
+<frameset   rows="2%,65%,5%,*"  frameborder="no" framespacing="0" >	
+<frameset   frameborder="0">
+		<frame  src="title01.jsp"  noresize="noresize" scrolling="no">
+		</frameset>
+		<frame  src="data.jsp"  noresize="noresize" scrolling="no">
 	
+		<frameset   frameborder="0">
+		<frame  src="title02.jsp"  noresize="noresize" scrolling="no">
+		</frameset>
 		
 		<frameset   frameborder="0">
-		<frame  src="form.jsp"  noresize="noresize" scrolling="no">
+		<frame  src="glasscard.jsp"  noresize="noresize" scrolling="no">
 		</frameset>
 	</frameset>
 		

@@ -5,7 +5,7 @@
 <head>
 <title>Insert title here</title>
 </head>
-<body background="img/12.png">
+<body bgcolor="blue">
 <center>
 	<br><br><br><br><br><br>
 	<h2>欢迎使用招聘信息聚合系统</h2>

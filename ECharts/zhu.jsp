@@ -27,12 +27,11 @@
       
       var salary=new Array();
       var indexSalary=0;
-      <c:forEach items="${goodsList}" var="goods">
-          arr[index++] = ${goods.sales};
-      </c:forEach>
-	  	  
+      var num=new Array();
+      var indexNum=0;	  	  
       <c:forEach items="${dateList}" var="date">
       	  salary[indexSalary++]=${date.averageSalary};
+      	  num[indexNum++]=${date.recruitNum}
 	  </c:forEach>
 	  
       // 指定图表的配置项和数据
@@ -44,7 +43,7 @@
               show: true
           },
           legend: {
-              data:['平均薪资']
+              data:['平均薪资','招聘人数']
           },
           xAxis : [
               {
@@ -53,10 +52,30 @@
                 	  <c:forEach items="${dateList}" var="type">
                       ["${type.type}"],
                       </c:forEach>
-                      /*<c:forEach items="${goodsList}" var="g">
-                      ["${g.name}"],
-                      </c:forEach>*/
-                  ]
+                  ],
+                  axisLabel: {
+                      interval: 0,
+                      formatter:function(value){  
+                          var str = ""; 
+                          var num = 4; //每行显示字数 
+                          var valLength = value.length; //该项x轴字数  
+                          var rowNum = Math.ceil(valLength / num); // 行数  
+                          
+                          if(rowNum > 1) {
+                              for(var i = 0; i < rowNum; i++) {
+                                  var temp = "";
+                                  var start = i * num;
+                                  var end = start + num;
+                                  
+                                  temp = value.substring(start, end) + "\n";
+                                  str += temp; 
+                              }
+                              return str;
+                          } else {
+                              return value;
+                          } 
+                      }
+                  }
               }
           ],
           yAxis : [
@@ -64,11 +83,32 @@
                   type : 'value'
               }
           ],
+          toolbox: {
+              show: true,
+              feature: {
+                  dataZoom: {
+                      yAxisIndex: 'none'
+                  }, //区域缩放，区域缩放还原
+                  dataView: { 
+                      readOnly: true
+                  }, //数据视图
+                  magicType: {
+                      type: ['line', 'bar']
+                  },  //切换为折线图，切换为柱状图
+                  restore: {},  //还原
+                  saveAsImage: {}   //保存为图片
+              }
+          },
           series : [
               {
                   name:'平均薪资',
                   type:'bar',
                   data: salary
+              },
+              {
+                  name:'招聘人数',
+                  type:'bar',
+                  data: num
               }
           ]
       };

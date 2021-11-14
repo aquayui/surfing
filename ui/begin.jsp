@@ -62,51 +62,6 @@ body{
 <br>
 <br>
 <br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">运营</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">市场</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">人事/财务/行政</button>
-<br>
-<br>
-<br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">高级管理</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">销售</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">传媒</button>
-<br>
-<br>
-<br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">金融</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">教育培训</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">医疗健康</button>
-<br>
-<br>
-<br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">采购/贸易</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">供应链/物流</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">房地产/建筑</button>
-<br>
-<br>
-<br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">农/林/牧/渔</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">资讯/翻译/法律</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">旅游</button>
-<br>
-<br>
-<br>
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">服务业</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">市场</button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">生产制造</button>
 
 </center>
 </form> 

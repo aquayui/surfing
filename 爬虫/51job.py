@@ -6,7 +6,15 @@ import json
 import pprint
 import pymysql
 
-for page in range(1,2001):
+
+
+import db_test
+from tools import judge_Internet
+
+# import time
+# start = time.perf_counter()
+
+for page in range(1 ,2001):
     time.sleep(1)
     print(f"----------------------------------正在爬取第{page}页----------------------------------------")
     url = f'https://search.51job.com/list/010000,000000,0000,00,9,99,+,2,{page}.html?lang=c&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&ord_field=0&dibiaoid=0&line=&welfare='
@@ -48,19 +56,24 @@ for page in range(1,2001):
         description = _['job_href']#岗位链接
         date = _['issuedate']#发布日期
         # print(job_title,job_name,company_name,companytype,companyind,experience,education,number,salary,location,description,date,sep = ' | ')
-        conn = pymysql.connect(host="1.116.201.187", user="surfing", password="123456", database="surfing",
-                               charset="utf8")
-        # 得到一个可以执行SQL语句的光标对象
-        cursor = conn.cursor()
-        # 定义要执行的SQL语句
-        sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');" % (
-            '前程无忧',location,salary,experience,education,company_type,job_type,description,job_name,company_name,number,date)
-        # 执行SQL语句
-        try:
-            cursor.execute(sql)
-            conn.commit()
-        except:
-            print()
+
+        if judge_Internet(job_type):
+            conn = pymysql.connect(host="1.116.201.187", user="surfing", password="123456", database="surfing",
+                                   charset="utf8")
+            # 得到一个可以执行SQL语句的光标对象
+            cursor = conn.cursor()
+            # 定义要执行的SQL语句
+            sql = "INSERT INTO recruitment_1 (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');" % (
+                '前程无忧',location,salary,experience,education,company_type,job_type,description,job_name,company_name,number,date)
+            # 执行SQL语句
+            try:
+                cursor.execute(sql)
+                conn.commit()
+            except:
+                print()
 cursor.close()
 # 关闭数据库连接
 conn.close()
+
+# end = time.perf_counter()
+# print("运行耗时", end-start)

@@ -7,7 +7,7 @@
 <title>图片轮播</title>
 
 <style type="text/css">
-body{ background-color:#EEF2FB}
+
 
 .rollBox{width:1200px;height:250px;overflow:hidden;padding:0px;margin:0 auto;}
 .rollBox .RightBotton{height:0px;width:0px;background: no-repeat 0px 0px;
@@ -43,34 +43,40 @@ overflow:hidden;float:left;margin:110px 0 0 0;cursor:pointer;}
 
         <!-- 图片列表 begin -->
          <div class="pic">
-          <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+          <a href="#" onclick="window.open('https://www.zhaopin.com/')">
+          <img src="img/智联.png"> </a>
          </div>  
              
          <div class="pic">
-          <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+          <a href="#" onclick="window.open('https://mkt.51job.com/')">
+          <img src="img/前程无忧.png"> </a>
       
          </div>
          
          
          <div class="pic">
-          <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+          <a href="#" onclick="window.open('https://wow.liepin.com/')">
+          <img src="img/猎聘.png"> </a>
 
          </div>
          
           
          <div class="pic">
-         <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+         <a href="#" onclick="window.open('https://www.lagou.com/')">
+         <img src="img/拉勾.png"> </a>
 
          </div>
          
          
          <div class="pic">
-        <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+        <a href="#" onclick="window.open('https://www.zhipin.com/xiamen/')">
+        <img src="img/boss.png"> </a>
 
          </div>
          
    		<div class="pic">
-         <a href="#" onclick="openwin()"><img src="img/招聘.png"> </a>
+         <a href="#" onclick="window.open('https://xm.58.com/')">
+         <img src="img/58.jpg"> </a>
 
          </div>
          

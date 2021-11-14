@@ -53,8 +53,93 @@ body{
 
 <script LANGUAGE="JavaScript">
 　　<!--
-　　function openwin() {
-　　window.open ("t.jsp", "newwindow") //写成一行
+　　function openwin1() {
+　　window.open ('test02.jsp?clicktype=1', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin2() {
+　　window.open ('test02.jsp?clicktype=2', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin3() {
+　　window.open ('test02.jsp?clicktype=3', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin4() {
+　　window.open ('test02.jsp?clicktype=4', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin5() {
+　　window.open ('test02.jsp?clicktype=5', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin6() {
+　　window.open ('test02.jsp?clicktype=6', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin7() {
+　　window.open ('test02.jsp?clicktype=7', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin8() {
+　　window.open ('test02.jsp?clicktype=8', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin9() {
+　　window.open ('test02.jsp?clicktype=9', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin10() {
+　　window.open ('test02.jsp?clicktype=10', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin11() {
+　　window.open ('test02.jsp?clicktype=11', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin12() {
+　　window.open ('test02.jsp?clicktype=12', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin13() {
+　　window.open ('test02.jsp?clicktype=13', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin14() {
+　　window.open ('test02.jsp?clicktype=14', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin15() {
+　　window.open ('test02.jsp?clicktype=15', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin16() {
+　　window.open ('test02.jsp?clicktype=16', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin17() {
+　　window.open ('test02.jsp?clicktype=17', "newwindow") //写成一行
+　　}
+　　//-->
+<!--
+　　function openwin18() {
+　　window.open ('test02.jsp?clicktype=18', "newwindow") //写成一行
 　　}
 　　//-->
 　</script>
@@ -63,61 +148,62 @@ body{
 
 <center>
 
-<button class="btn" onclick="window.open('menu.jsp')">后端开发</button>
+<button class="btn" onclick="openwin1()">后端开发</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="openwin()" class="btn">移动开发</button>
+<button type="submit" onclick="openwin2()" class="btn">移动开发</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">测试</button>
+<button type="submit" onclick="openwin3()" class="btn">测试</button>
 
 
 <br>
 <br>
 <br>
 
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">运维/技术支持</button>
+<button type="submit" onclick="openwin4()" class="btn">运维/技术支持</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">数据</button>
+<button type="submit" onclick="openwin5()" class="btn">数据</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">项目管理</button>
+<button type="submit" onclick="openwin6()" class="btn">项目管理</button>
 <br>
 <br>
 <br>
 
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">硬件开发</button>
+<button type="submit" onclick="openwin7()" class="btn">硬件开发</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">前端开发</button>
+<button type="submit" onclick="openwin8()" class="btn">前端开发</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">通信</button>
+<button type="submit" onclick="openwin9()" class="btn">通信</button>
 <br>
 <br>
 <br>
 
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">电子/半导体</button>
+<button type="submit" onclick="openwin10()" class="btn">电子/半导体</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">高端技术职位</button>
+<button type="submit" onclick="openwin11()" class="btn">高端技术职位</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">人工智能</button>
+<button type="submit" onclick="openwin12()" class="btn">人工智能</button>
 <br>
 <br>
 <br>
 
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">销售技术支持</button>
+<button type="submit" onclick="openwin13()" class="btn">销售技术支持</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">视觉/交互设计</button>
+<button type="submit" onclick="openwin14()" class="btn">视觉/交互设计</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">游戏设计</button>
+<button type="submit" onclick="openwin15()" class="btn">游戏设计</button>
 <br>
 <br>
 <br>
 
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">用户研究</button>
+<button type="submit" onclick="openwin16()" class="btn">用户研究</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">高端设计职位</button>
+<button type="submit" onclick="openwin17()" class="btn">高端设计职位</button>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button type="submit" onclick="window.open('menu.jsp')" class="btn">产品经理</button>
+<button type="submit" onclick="openwin18()" class="btn">产品经理</button>
 
 
 </center>
-</form> 
+
 </body>
+
 </html>

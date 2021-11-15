@@ -4,6 +4,8 @@ from selenium import webdriver #操控浏览器
 import pymysql
 from selenium.webdriver.chrome.options import Options
 
+from 爬虫.tools import judge_Internet
+
 provider="BOSS直聘"#信息来源网站
 
 driver=webdriver.Chrome()#实例化浏览器对象
@@ -27,16 +29,17 @@ for i in range(1,1000):
         job_type=li.find_element_by_css_selector('.company-text p a').text
         description="https://www.zhipin.com"+li.find_element_by_css_selector('.primary-wrapper div').get_attribute('href')
         # 定义要执行的SQL语句
-        sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
-              "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
-                  provider,location, salary, experience, education, job_type, description, job_name, company)
-        try:
-            # 执行SQL语句
-            cursor.execute(sql)
-            # 关闭光标对象
-            conn.commit()
-        except Exception as e:
-            print(e)
+        if judge_Internet(job_type):
+            sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
+                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
+                      provider, location, salary, experience, education, job_type, description, job_name, company)
+            try:
+                # 执行SQL语句
+                cursor.execute(sql)
+                # 关闭光标对象
+                conn.commit()
+            except Exception as e:
+                print(e)
 cursor.close()
 # 关闭数据库连接
 conn.close()

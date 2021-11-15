@@ -4,7 +4,7 @@ from selenium import webdriver #操控浏览器
 import pymysql
 from selenium.webdriver.chrome.options import Options
 
-from 爬虫.tools import judge_Internet
+from 爬虫.tools import judge_Internet, sort_Internet
 
 provider="BOSS直聘"#信息来源网站
 
@@ -30,9 +30,10 @@ for i in range(1,1000):
         description="https://www.zhipin.com"+li.find_element_by_css_selector('.primary-wrapper div').get_attribute('href')
         # 定义要执行的SQL语句
         if judge_Internet(job_type):
-            sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
-                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
-                      provider, location, salary, experience, education, job_type, description, job_name, company)
+            job_class = sort_Internet(job_type)
+            sql = "INSERT INTO recruitment_1 (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date,job_class) " \
+                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null,'%s');" % (
+                      provider, location, salary, experience, education, job_type, description, job_name, company,job_class)
             try:
                 # 执行SQL语句
                 cursor.execute(sql)

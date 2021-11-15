@@ -9,6 +9,8 @@ from selenium.webdriver.chrome.options import Options
 # chrome_options.add_argument("--headless")
 # driver = webdriver.Chrome(options=chrome_options)
 #打开浏览器，不用上面那个则打开这个
+from 爬虫.tools import judge_Internet, sort_Internet
+
 driver=webdriver.Chrome()#实例化浏览器对象
 provider="猎聘"#信息来源网站
 conn = pymysql.connect(host="1.116.201.187", user="surfing", password="123456", database="surfing", charset="utf8")
@@ -44,9 +46,10 @@ for i in range(1,1000):
         description=li.find_element_by_css_selector('.job-card-left-box .job-detail-box a').get_attribute('href')
         if judge_Internet(job_type):
             # 定义要执行的SQL语句
-            sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
-                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
-                      provider, location, salary, experience, education, job_type, description, job_name, company)
+            job_class = sort_Internet(job_type)
+            sql = "INSERT INTO recruitment_1 (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date,job_class) " \
+                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null,'%s');" % (
+                      provider, location, salary, experience, education, job_type, description, job_name, company,job_class)
             try:
                 # 执行SQL语句
                 cursor.execute(sql)

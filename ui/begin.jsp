@@ -54,92 +54,92 @@ body{
 <script LANGUAGE="JavaScript">
 　　<!--
 　　function openwin1() {
-　　window.open ('test02.jsp?clicktype=1', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=1' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin2() {
-　　window.open ('test02.jsp?clicktype=2', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=2' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin3() {
-　　window.open ('test02.jsp?clicktype=3', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=3' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin4() {
-　　window.open ('test02.jsp?clicktype=4', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=4' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin5() {
-　　window.open ('test02.jsp?clicktype=5', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=5' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin6() {
-　　window.open ('test02.jsp?clicktype=6', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=6' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin7() {
-　　window.open ('test02.jsp?clicktype=7', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=7' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin8() {
-　　window.open ('test02.jsp?clicktype=8', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=8' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin9() {
-　　window.open ('test02.jsp?clicktype=9', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=9' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin10() {
-　　window.open ('test02.jsp?clicktype=10', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=10' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin11() {
-　　window.open ('test02.jsp?clicktype=11', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=11' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin12() {
-　　window.open ('test02.jsp?clicktype=12', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=12' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin13() {
-　　window.open ('test02.jsp?clicktype=13', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=13' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin14() {
-　　window.open ('test02.jsp?clicktype=14', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=14'//写成一行
 　　}
 　　//-->
 <!--
 　　function openwin15() {
-　　window.open ('test02.jsp?clicktype=15', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=15' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin16() {
-　　window.open ('test02.jsp?clicktype=16', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=16' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin17() {
-　　window.open ('test02.jsp?clicktype=17', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=17' //写成一行
 　　}
 　　//-->
 <!--
 　　function openwin18() {
-　　window.open ('test02.jsp?clicktype=18', "newwindow") //写成一行
+　　window.location.href ='test02.jsp?clicktype=18' //写成一行
 　　}
 　　//-->
 　</script>

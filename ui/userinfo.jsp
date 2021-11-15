@@ -41,6 +41,8 @@ button{
 
 <body>
 <center>
+	<h1>您的信息如下</h1>
+	<br>
 <div>
 
 	<font size="+2" color="black">学历：</font>
@@ -131,9 +133,10 @@ button{
     <textarea  placeholder="对您希望的职位进行详细的描述..." style="background-color: #cccccc;width:370px;height:100px;overflow-y:hidden;font-size:22px"></textarea>-->
 
     <br><br>
-    <a href="glasscard.jsp" target="_blank"><button>确定</button></a></center>
+    <a href="glasscard.jsp" target="_blank"><button>确定</button></a>
+    <a href="glasscard.jsp" target="_blank"><button>返回</button></a>
 </div>
-    
+   </center> 
     
 </body>
 

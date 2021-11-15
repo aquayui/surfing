@@ -42,17 +42,18 @@ for i in range(1,1000):
         except:
             job_type='null'
         description=li.find_element_by_css_selector('.job-card-left-box .job-detail-box a').get_attribute('href')
-        # 定义要执行的SQL语句
-        sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
-              "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
-                  provider,location, salary, experience, education, job_type, description, job_name, company)
-        try:
-            # 执行SQL语句
-            cursor.execute(sql)
-            # 关闭光标对象
-            conn.commit()
-        except Exception as e:
-            print(e)
+        if judge_Internet(job_type):
+            # 定义要执行的SQL语句
+            sql = "INSERT INTO recruitment (provider,location,salary,experience,education,company_type,job_type,description,job_name,company,number,date) " \
+                  "VALUES ('%s','%s','%s','%s','%s',null,'%s','%s','%s','%s',null,null);" % (
+                      provider, location, salary, experience, education, job_type, description, job_name, company)
+            try:
+                # 执行SQL语句
+                cursor.execute(sql)
+                # 关闭光标对象
+                conn.commit()
+            except Exception as e:
+                print(e)
         i=i+1
 driver.quit()
 cursor.close()

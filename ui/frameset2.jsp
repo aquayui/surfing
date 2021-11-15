@@ -6,9 +6,10 @@
 <title></title>
 </head>
 
-<frameset rows="8%,23%,*"  frameborder="no" framespacing="0">
+<frameset rows="8%,23%,8%,*"  frameborder="no" framespacing="0">
 	<frame  src="top.jsp"   name="topframe" noresize="noresize" scrolling="no"/>
 	<frame  src="picture.jsp"   name="menuframe" noresize="noresize" scrolling="no"/>
+	<frame  src="search.jsp"   name="searchframe" noresize="noresize" scrolling="no"/>
 	<frame  src="begin.jsp"  name="viewframe" noresize="noresize" scrolling="no"/>
 </frameset>
 <body>

@@ -70,11 +70,9 @@ button{
 	<font size="+2" color="black">性别：</font>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<select  name="2" id="2" style="background-color: #cccccc;width:120pt;height:36pt;font-size:22px"> 
-        <option value="21" class="blue" selected disabled hidden >选择薪资要求：</option> 
-        <option value="22" class="blue">3000</option> 
-        <option value="23" class="blue">6000 </option> 
-        <option value="24" class="blue">10000</option> 
-        <option value="25" class="blue">15000</option> 
+        <option value="21" class="blue" selected disabled hidden >选择性别：</option> 
+        <option value="22" class="blue">男</option>
+        <option value="22" class="blue">女</option> 
     </select>
     
     <br><br>

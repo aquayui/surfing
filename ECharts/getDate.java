@@ -67,8 +67,12 @@ public class getDate {
 		try {
 			for(int i=0;i<7;i++) {
 				rs=stmt.executeQuery(s[i]);
-				rs.last();
-			    year[i]=rs.getRow();
+				int k=1;
+				while(rs.next()) {
+					k++;
+				}
+				//rs.last();
+			    year[i]=k;
 			    //System.out.println(year[i]);
 			}
 			//System.out.println(year[6]);
@@ -185,8 +189,12 @@ public class getDate {
 		try {
 			for(int i=0;i<8;i++) {
 				rs=stmt.executeQuery(s[i]);
-				rs.last();
-				eduNum[i]=rs.getRow();
+				int j=1;
+				while(rs.next()) {
+					j++;
+				}
+				//rs.last();
+				eduNum[i]=j;
 			    //System.out.println(eduNum[i]);
 			}			
 			//System.out.println(year[6]);

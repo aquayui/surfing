@@ -39,7 +39,7 @@ public class judge extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 				//doGet(request, response);
 		response.setContentType("text/html;charset=utf-8");
 		String username=request.getParameter("username");
